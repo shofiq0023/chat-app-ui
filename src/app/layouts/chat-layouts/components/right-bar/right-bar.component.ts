@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {FaIconComponent, IconDefinition} from '@fortawesome/angular-fontawesome';
 import {faCommentDots} from '@fortawesome/free-solid-svg-icons/faCommentDots';
 import {faVideo} from '@fortawesome/free-solid-svg-icons/faVideo';
@@ -9,12 +9,12 @@ import {faMusic} from '@fortawesome/free-solid-svg-icons/faMusic';
 import {faImage} from '@fortawesome/free-solid-svg-icons/faImage';
 
 @Component({
-  selector: 'app-right-bar',
+	selector: 'app-right-bar',
 	imports: [
 		FaIconComponent
 	],
-  templateUrl: './right-bar.component.html',
-  styleUrl: './right-bar.component.css'
+	templateUrl: './right-bar.component.html',
+	styleUrl: './right-bar.component.css'
 })
 export class RightBarComponent {
 	public chatIcon: IconDefinition = faCommentDots;

@@ -5,7 +5,9 @@
 			<div class="profile-name">David Peters</div>
 			<div class="profile-title">Senior Developer</div>
 		</div>
-		<a href="#" class="btn text-secondary"><fa-icon class="fa-lg" [icon]="pencilIcon"/></a>
+		<a href="#" class="btn text-secondary">
+			<fa-icon class="fa-lg" [icon]="pencilIcon"/>
+		</a>
 		<a routerLink="/login" class="btn btn-outline-danger">Logout</a>
 	</div>
 	<div>
@@ -27,7 +29,8 @@
 						<div class="contact-time">{{ contact.messageTime }}</div>
 					</div>
 					<div class="col-1">
-						<span class="badge badge-unread d-flex align-items-center justify-content-center">{{ contact.unseenMessage }}</span>
+						<span
+							class="badge badge-unread d-flex align-items-center justify-content-center">{{ contact.unseenMessage }}</span>
 					</div>
 				</div>
 			</div>
