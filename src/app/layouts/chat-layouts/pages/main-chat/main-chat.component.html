@@ -1,3 +1,14 @@
-<app-sidebar/>
-<app-chat-window/>
-<a routerLink="/login" class="btn btn-danger">Logout</a>
+<div class="container-fluid m-0 p-0">
+	<div class="row g-0 h-100">
+		<div class="col-md-3 left-sidebar">
+			<app-sidebar/>
+		</div>
+		<div class="col-md-6 chat-area">
+			<app-chat-window/>
+		</div>
+
+		<div class="col-md-3 right-sidebar">
+			<app-right-bar/>
+		</div>
+	</div>
+</div>

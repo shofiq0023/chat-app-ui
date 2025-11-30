@@ -1,1 +1,36 @@
-<p>sidebar works!</p>
+<div class="profile-section">
+	<div class="d-flex align-items-center mb-3">
+		<div class="profile-pic"></div>
+		<div class="ms-3 flex-grow-1">
+			<div class="profile-name">David Peters</div>
+			<div class="profile-title">Senior Developer</div>
+		</div>
+		<a href="#" class="btn text-secondary"><fa-icon class="fa-lg" [icon]="pencilIcon"/></a>
+		<a routerLink="/login" class="btn btn-outline-danger">Logout</a>
+	</div>
+	<div>
+		<input type="text" class="form-control" placeholder="Search Here...">
+	</div>
+</div>
+
+<div class="p-2">
+	@for (contact of contacts; track contact.id) {
+		<div class="contact-item p-3">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2">
+						<div class="contact-avatar"></div>
+					</div>
+					<div class="col-9 align-items-center">
+						<div class="contact-name">{{ contact.name }}</div>
+						<div class="contact-message">{{ contact.lastMessage }}</div>
+						<div class="contact-time">{{ contact.messageTime }}</div>
+					</div>
+					<div class="col-1">
+						<span class="badge badge-unread d-flex align-items-center justify-content-center">{{ contact.unseenMessage }}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	}
+</div>

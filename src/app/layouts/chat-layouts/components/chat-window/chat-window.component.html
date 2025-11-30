@@ -1,1 +1,120 @@
-<p>chat-window works!</p>
+<div class="chat-header d-flex align-items-center sticky-top bg-white">
+	<div class="chat-avatar"></div>
+	<div class="ms-3">
+		<div class="chat-user-name">
+			Dianne Jhonson
+			<span class="online-status"></span>
+		</div>
+	</div>
+	<div class="ms-auto d-flex gap-3">
+		<a href="#" class="text-secondary">
+			<fa-icon class="fa-lg" [icon]="searchIcon"/>
+		</a>
+		<a href="#" class="text-secondary">
+			<fa-icon class="fa-lg" [icon]="heartIcon"/>
+		</a>
+		<a href="#" class="text-secondary">
+			<fa-icon class="fa-lg" [icon]="bellIcon"/>
+		</a>
+
+	</div>
+</div>
+
+<div class="messages-container flex-grow-1">
+	<div class="message received d-flex gap-2">
+		<div class="message-avatar"></div>
+		<div class="message-bubble">
+			Hi David, have you got the project report pdf?
+		</div>
+	</div>
+
+	<div class="message sent d-flex gap-2">
+		<div class="message-avatar"></div>
+		<div class="message-bubble">
+			NO. I did not get it
+		</div>
+	</div>
+
+	<div class="date-divider">Yesterday</div>
+
+	<div class="message received d-flex gap-2">
+		<div class="message-avatar"></div>
+		<div>
+			<div class="message-bubble">
+				Ok, I will just sent it here. Plz be sure to fill the details by today end of the day.
+			</div>
+			<div class="file-attachment d-flex align-items-center gap-3">
+				<div class="file-icon"></div>
+				<div class="file-name">project_report.pdf</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="message sent d-flex gap-2">
+		<div class="message-avatar"></div>
+		<div class="message-bubble">
+			Ok. Should I send it over email as well after filling the details.
+		</div>
+	</div>
+
+	<div class="message received d-flex gap-2">
+		<div class="message-avatar"></div>
+		<div class="message-bubble">
+			Ya. I'll be adding more team members to it.
+		</div>
+	</div>
+
+	<div class="message received d-flex gap-2">
+		<div class="message-avatar"></div>
+		<div class="message-bubble">
+			Ya. I'll be adding more team members to it.
+		</div>
+	</div>
+
+	<div class="message received d-flex gap-2">
+		<div class="message-avatar"></div>
+		<div class="message-bubble">
+			Ya. I'll be adding more team members to it.
+		</div>
+	</div>
+
+	<div class="message received d-flex gap-2">
+		<div class="message-avatar"></div>
+		<div class="message-bubble">
+			Ya. I'll be adding more team members to it.
+		</div>
+	</div>
+
+	<div class="message received d-flex gap-2">
+		<div class="message-avatar"></div>
+		<div class="message-bubble">
+			Ya. I'll be adding more team members to it.
+		</div>
+	</div>
+
+	<div class="message sent d-flex gap-2">
+		<div class="message-avatar"></div>
+		<div class="message-bubble">
+			OK
+		</div>
+	</div>
+</div>
+
+<div class="message-input-area d-flex align-items-center gap-3 sticky-bottom">
+	<button class="btn btn-icon">
+		<fa-icon class="fa-lg" [icon]="micIcon"/>
+	</button>
+	<input type="text" class="form-control message-input flex-grow-1" placeholder="Write Something...">
+	<button class="btn btn-icon">
+		<fa-icon class="fa-lg" [icon]="paperClipIcon"/>
+	</button>
+	<button class="btn btn-icon">
+		<fa-icon class="fa-lg" [icon]="cameraIcon"/>
+	</button>
+	<button class="btn btn-icon">
+		<fa-icon class="fa-lg" [icon]="emojiIcon"/>
+	</button>
+	<button class="btn btn-send">
+		<fa-icon class="fa-lg" [icon]="sendIcon"/>
+	</button>
+</div>
